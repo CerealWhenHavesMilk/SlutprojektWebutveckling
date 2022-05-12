@@ -35,7 +35,7 @@
 
         </div>
         <li>news</li>
-        <li><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><a href="#cartpg"><i class="fa-solid fa-cart-shopping"></i></a></li>
         
 
 
@@ -49,40 +49,72 @@
   
 
     <div id="pg2">
+        <div class="Cart">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><img src="bk_kiosk_400x290_singel_whopper-1.png"><p>Classic-Burger</p></td>
+                    <td><input type="number" id="quant" name="Classic-Burger" value="1"><button onclick="myfunction2('quant','price1',50)">add</button><p id="demo"></p></td>
+                    <td>50$<p id=price1></p></td>
+                </tr>
+                <tr>    
+                    <td><img src="bacon.png"><p>Bacon-burger</p></td>
+                    <td><input type="number" id="quant2" name="Bacon-burger" value="1"><button onclick="myfunction2('quant2','price2',69)">add</button></td>
+                    <td>69$<p id="price2"></p></td>
+                </tr>
+                <tr>
+                    <td><img src="BK FISH-nos.png"></p>Fish-burger</p></td>
+                    <td><input type="numer" id="quant3" name="fis-burger" value="1"><button onclick="myfunction2('quant3','price3',50)">add</button></td>
+                    <td>50$<p id="price3"></p></td>
+                </tr>
+                <tr>
+                    <td><img src="67TlfgEzAi3tmjl-Double-Cheese-Burger-PNG-File-removebg-preview.png"><p>Chese-bruger</p></td>
+                    <td><input type="number" id="quant4" name="chese-burger" value="1"><button onclick="myfunction2('quant4','price4',30)">add</button></td>
+                    <td>30$<p id="price4"></p></td>
+                </tr>>
+        
+            </table>
+        </div>
 
-
-        <table>
-            <tr class="infoTable">
-                <th class="product"><h2>product</h2>
-
-                    <ul>
-                        <li><p>burger</p><img src="bk_kiosk_400x290_singel_whopper-1.png"></li>
-                        <li><p>big burger</p><img src="BK FISH-nos.png"></li>
-                    </ul>
-
-                </th>
-                <th class="quantity"><h2>Quantity</h2>
-                    <ul>
-                        <li><input type="number" value="1"></li>
-                        <li><input type="number" value="1"></li>
-
-                    </ul>
-                </th>
-                <th class="subtotal"><h2>Subtotal</h2></th>
-            </tr>
-   
-        </table>
+    
 
         <a href="#pg3">pg3</a>
-        
+            
     
     </div>
     <div id="pg3">
-        <a href="#pg4">pg4</a>
+        <div class="Cart"></div>
+
+
+    
+
     </div>
-    <div id="pg4"></div>
+
+    <div id="pg4">
+        <div class="Cart"></div>
 
 
+    </div>
+
+    <div class="Cart">
+
+  
+
+    <div id="cartpg">
+        <table>
+            <tr>
+                <th>Product/quantity/price</th>
+            </tr>
+            <td id="incart"></td>
+            </tr>
+        
+        </table>
+
+    </div>
 
 </body>
 </html>

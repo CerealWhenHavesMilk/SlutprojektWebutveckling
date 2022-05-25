@@ -47,12 +47,12 @@ function myfunction2(product,price,v) {
 
 
 
-    list.push(document.getElementById(product).name + " " + y + "x" + "<br>")
+    list.push(document.getElementById(product).name + " " + y + "x" + " " + y*v + "<br>")
     console.log(document.getElementById(product).name)
 
     
 
-    document.getElementById("incart").innerHTML = (list + z + "$")
+    document.getElementById("incart").innerHTML = (list + "<br>" + "total:" + z + "$")
 
 }
 
